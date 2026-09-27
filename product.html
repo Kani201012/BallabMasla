@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spice Details | Ballab Masala</title>
+<meta name="description" content="View spice specifications, stone milling method, culinary pairings, and order fresh pouches online from Ballab Masala.">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#991b1b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --primary: #991b1b;
+    --gold: #df9b26;
+    --bg: #fdfbf7;
+    --card-bg: #ffffff;
+    --text-heading: #1c1917;
+    --text-body: #44403c;
+    --border-color: rgba(223, 155, 38, 0.2);
+    --font-display: 'Cinzel', serif;
+    --font-sans: 'Plus Jakarta Sans', sans-serif;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--bg); color: var(--text-body); font-family: var(--font-sans); line-height: 1.7; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+
+nav { background: var(--card-bg); border-bottom: 1px solid var(--border-color); padding: 1.2rem 0; }
+.nav-flex { display: flex; justify-content: space-between; align-items: center; }
+.nav-links a { text-decoration: none; color: var(--text-body); font-weight: 600; margin-left: 2rem; }
+.nav-links a:hover { color: var(--primary); }
+
+.product-detail-layout {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; padding: 4rem 0 6rem 0; align-items: start;
+}
+.media-column { position: sticky; top: 100px; }
+.main-img-box {
+    width: 100%; height: 480px; border-radius: 24px; overflow: hidden;
+    border: 1px solid var(--border-color); box-shadow: 0 15px 40px rgba(0,0,0,0.08); background: #fff;
+}
+.main-img-box img { width: 100%; height: 100%; object-fit: cover; }
+.thumb-strip { display: flex; gap: 12px; margin-top: 15px; overflow-x: auto; padding-bottom: 5px; }
+.thumb-img {
+    width: 75px; height: 75px; border-radius: 12px; object-fit: cover; cursor: pointer;
+    border: 2px solid transparent; opacity: 0.7; transition: 0.25s;
+}
+.thumb-img:hover, .thumb-img.active { opacity: 1; border-color: var(--gold); }
+
+.details-column h1 { font-family: var(--font-display); font-size: clamp(2rem, 3.5vw, 3rem); margin-bottom: 0.8rem; color: var(--text-heading); }
+.price-pill {
+    display: inline-block; background: rgba(223, 155, 38, 0.15); color: #92400e;
+    font-size: 1.6rem; font-weight: 800; padding: 0.3rem 1.4rem; border-radius: 50px; margin-bottom: 1.5rem;
+}
+.specs-body { font-size: 1.05rem; line-height: 1.8; margin-bottom: 2.5rem; color: var(--text-body); }
+
+.cta-actions { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 3rem; }
+.btn-buy {
+    background: var(--primary); color: #fff; padding: 1rem 2.5rem; border-radius: 50px;
+    font-weight: 700; text-decoration: none; border: none; cursor: pointer; font-size: 1rem;
+    box-shadow: 0 10px 25px rgba(153, 27, 27, 0.3); transition: 0.3s;
+}
+.btn-buy:hover { transform: translateY(-2px); filter: brightness(1.1); }
+.btn-wa {
+    background: #25D366; color: #fff; padding: 1rem 2rem; border-radius: 50px;
+    font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;
+}
+
+.badge-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;
+    border-top: 1px solid var(--border-color); padding-top: 2rem; margin-top: 2rem;
+}
+.badge-card {
+    background: var(--card-bg); border: 1px solid var(--border-color); padding: 1rem; border-radius: 12px; text-align: center; font-size: 0.85rem; font-weight: 600;
+}
+
+footer { background: #0d0b0a; color: #a8a29e; padding: 3rem 0; text-align: center; }
+footer a { color: var(--gold); text-decoration: none; }
+
+@media(max-width: 860px) {
+    .product-detail-layout { grid-template-columns: 1fr; gap: 2.5rem; }
+    .media-column { position: relative; top: 0; }
+    .main-img-box { height: 360px; }
+}
+</style>
+</head>
+<body>
+  <nav>
+    <div class="container nav-flex">
+        <a href="index.html" style="text-decoration:none; font-family:var(--font-display); font-size:1.5rem; font-weight:800; color:var(--primary);">
+            Ballab Masala
+        </a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#inventory">Store</a>
+            <a href="about.html">Our Heritage</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div style="padding-top: 2rem;">
+        <a href="index.html#inventory" style="text-decoration:none; color:var(--primary); font-weight:700; font-size:0.9rem;">← Back to Pantry Collection</a>
+    </div>
+
+    <div id="product-target" class="product-detail-layout">
+        <div style="grid-column: 1/-1; text-align:center; padding: 5rem 0;">Loading fresh spice details...</div>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2026 Ballab Masala • 100% Pure Traditional Stone-Ground Spices</p>
+        <p style="margin-top:8px;"><a href="index.html">Back to Home</a> | <a href="contact.html">Contact Us</a></p>
+    </div>
+</footer>
+
+<script>
+function parseCSVLine(str) { 
+    const res = []; let cur = ''; let inQuote = false; 
+    for (let i = 0; i < str.length; i++) { 
+        const c = str[i]; 
+        if (c === '"') { 
+            if (inQuote && str[i+1] === '"') { cur += '"'; i++; } 
+            else { inQuote = !inQuote; } 
+        } else if (c === ',' && !inQuote) { 
+            res.push(cur.trim()); cur = ''; 
+        } else { cur += c; } 
+    } 
+    res.push(cur.trim()); return res; 
+}
+
+async function loadItem() {
+    const params = new URLSearchParams(window.location.search);
+    const targetName = params.get('item');
+    const CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTs32OYdkg_YQUk4zAR_VmMn0BxJHgVYHgfZnFiK0L1PT0w16pW9VhtHRSp9bKUGnkfm2U4kof_iMGm/pub?output=csv';
+    
+    let product = null;
+
+    try {
+        const res = await fetch(CSV_URL);
+        const txt = await res.text();
+        const lines = txt.split(/\r\n|\n/);
+        for(let i=1; i<lines.length; i++) {
+            const c = parseCSVLine(lines[i]);
+            if(c[0] && (c[0] === targetName || (!targetName && i===1))) {
+                let imgs = c[3] ? c[3].split('|').map(s=>s.trim()) : [];
+                product = {
+                    name: c[0],
+                    price: c[1],
+                    desc: c[2],
+                    images: imgs.length > 0 ? imgs : ['https://cdn.shopaccino.com/refresh/articles/shutterstock1503700925-670186_l.jpg?v=681']
+                };
+                break;
+            }
+        }
+    } catch(e) { console.error(e); }
+
+    if(!product) {
+        product = {
+            name: targetName || "Assam Special Chilli Powder",
+            price: "₹120 / 200g",
+            desc: "Handpicked sun-dried Assam chillies ground using slow cold-stone millers. Provides unmatched crimson red gravy color with delicate, child-friendly heat. 100% free from added color, brick powder, or artificial oils.",
+            images: [
+                'https://cdn.shopaccino.com/refresh/articles/shutterstock1503700925-670186_l.jpg?v=681',
+                'https://micdp.coops4dev.coop/sites/default/files/styles/max_1440/public/2022-11/Frontier.jpg?itok=3bOzpRb3'
+            ]
+        };
+    }
+
+    renderDetail(product);
+}
+
+function renderDetail(p) {
+    document.title = `${p.name} | Ballab Masala`;
+    const target = document.getElementById('product-target');
+
+    const thumbs = p.images.map((img, i) => `
+        <img src="${img}" class="thumb-img ${i===0?'active':''}" onclick="changeImg('${img}', this)" alt="${p.name}">
+    `).join('');
+
+    target.innerHTML = `
+        <div class="media-column">
+            <div class="main-img-box">
+                <img id="main-product-img" src="${p.images[0]}" alt="${p.name}">
+            </div>
+            <div class="thumb-strip">${thumbs}</div>
+        </div>
+
+        <div class="details-column">
+            <div style="text-transform:uppercase; color:var(--gold); font-weight:800; font-size:0.85rem; letter-spacing:0.08em; margin-bottom:8px;">
+                100% Stone-Ground Pure
+            </div>
+            <h1>${p.name}</h1>
+            <div class="price-pill">${p.price}</div>
+
+            <div class="specs-body">
+                <p>${p.desc}</p>
+                <p style="margin-top:1.2rem; font-weight:600; color:var(--text-heading);">
+                    ✓ Traditional cold stone-milled to preserve volatile essential oils.<br>
+                    ✓ Zero added artificial colors (Sudan-Free Certified).<br>
+                    ✓ Packed in multi-layer aroma-seal protective foil.
+                </p>
+            </div>
+
+            <div class="cta-actions">
+                <button onclick="instantBuy('${p.name.replace(/'/g, "\\'")}', '${p.price}')" class="btn-buy">
+                    Order on WhatsApp
+                </button>
+                <a href="https://wa.me/919734239509?text=Hello%20Ballab%20Masala,%20I%20have%20questions%20about%20${encodeURIComponent(p.name)}" target="_blank" class="btn-wa">
+                    Ask a Question
+                </a>
+            </div>
+
+            <div class="badge-grid">
+                <div class="badge-card">🌱 100% Natural</div>
+                <div class="badge-card">🛡️ Zero Preservatives</div>
+                <div class="badge-card">🚚 Pan-Bengal Dispatch</div>
+            </div>
+        </div>
+    `;
+}
+
+function changeImg(src, el) {
+    document.getElementById('main-product-img').src = src;
+    document.querySelectorAll('.thumb-img').forEach(t => t.classList.remove('active'));
+    el.classList.add('active');
+}
+
+function instantBuy(name, price) {
+    const msg = `*INSTANT SPICE ORDER*%0A• Item: ${encodeURIComponent(name)}%0A• Price: ${encodeURIComponent(price)}%0A%0APlease provide payment details and dispatch timeline.`;
+    window.open(`https://wa.me/919734239509?text=${msg}`, '_blank');
+}
+
+window.addEventListener('DOMContentLoaded', loadItem);
+</script>
+</body>
+</html>
