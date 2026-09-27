@@ -684,3 +684,588 @@ footer a:hover { color: var(--gold); transform: translateX(3px); }
     .store-controls { flex-direction: column; align-items: stretch; }
 }
 </style>
+</head>
+<body>
+  <div id="top-bar">
+    🌶️ Direct from Stone Mills to Kitchen: High Curcumin Turmeric & 3-Tier Chilli Collection!
+    <a href="#inventory">Order Fresh Batch →</a>
+</div>
+
+<!-- MAIN NAVBAR -->
+<nav id="main-navbar">
+    <div class="container nav-flex">
+        <a href="index.html" class="brand-logo" aria-label="Ballab Masala Home">
+            <div class="brand-icon">B</div>
+            <span class="brand-name">Ballab Masala</span>
+        </a>
+        
+        <button class="mobile-menu" onclick="toggleMobileNav()" aria-label="Toggle Navigation">☰</button>
+        
+        <div class="nav-links">
+            <a href="index.html" onclick="closeNav()">Home</a>
+            <a href="#spectrum" onclick="closeNav()">Chilli Heat Scale</a>
+            <a href="#inventory" onclick="closeNav()">Artisan Store</a>
+            <a href="about.html" onclick="closeNav()">Stone Mill Story</a>
+            <a href="contact.html" onclick="closeNav()">Contact</a>
+            <button onclick="toggleCartDrawer(); closeNav();" class="btn btn-outline" style="padding:0.6rem 1.4rem;">
+                🛒 Cart (<span class="header-cart-count">0</span>)
+            </button>
+            <a href="tel:+919734239509" class="btn btn-primary" style="padding:0.6rem 1.4rem;">Call Us</a>
+        </div>
+    </div>
+</nav>
+
+<!-- THEME TOGGLE -->
+<div id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle Dark/Light Mode">🌓</div>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="container hero-grid">
+        <div class="hero-text-col">
+            <div class="badge-pill">✨ 100% Stone-Ground Purity • Zero Fillers</div>
+            <h1>Pure Stone-Ground Spices Crafted with <span>Authentic Heat & Aroma</span></h1>
+            <p>Most commercial spices are blended with chemical dyes and starch. Ballab Masala is slowly stone-milled to retain cold essential oils, high curcumin potency, and our legendary 3-tier chilli profiles.</p>
+            
+            <div class="hero-cta-group">
+                <a href="#inventory" class="btn btn-primary">Shop Fresh Spices</a>
+                <a href="#spectrum" class="btn btn-gold">Explore Heat Scale</a>
+            </div>
+
+            <div class="hero-features-strip">
+                <div class="strip-item"><span class="strip-icon">✓</span> Cold Stone Grinding</div>
+                <div class="strip-item"><span class="strip-icon">✓</span> High Curcumin Tested</div>
+                <div class="strip-item"><span class="strip-icon">✓</span> Direct Pan-Bengal Delivery</div>
+            </div>
+        </div>
+
+        <div class="hero-media-wrapper">
+            <div class="hero-image-frame">
+                <img src="https://cdn.shopaccino.com/refresh/articles/shutterstock1503700925-670186_l.jpg?v=681" alt="Ballab Masala Pure Indian Spices Raw and Powdered" fetchpriority="high">
+            </div>
+            <div class="floating-seal">
+                <strong>100%</strong>
+                <span>Pure & Unadulterated<br>Guaranteed</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 3-TIER CHILLI HEAT SCALE SPECTRUM -->
+<section id="spectrum" class="heat-spectrum-section">
+    <div class="container">
+        <div class="section-title">
+            <div class="badge-pill" style="margin: 0 auto 1rem auto; display: table;">Exclusive Chilli Lineup</div>
+            <h2>The Signature 3-Tier Chilli Collection</h2>
+            <p>Not all curries demand the same heat. Select the exact balance of vibrant crimson color and tongue-tingling spice for your kitchen.</p>
+        </div>
+
+        <div class="spectrum-grid">
+            <div class="heat-card assam">
+                <div class="flame-indicator">🔥</div>
+                <div class="heat-level-title">Assam Special</div>
+                <div class="heat-scoville">Mild Heat • Rich Deep Red Color</div>
+                <p class="heat-desc">Sourced from rich Assam sun-dried peppers. Imparts gorgeous natural crimson red gravies with a mellow, aromatic warmth loved by children and family feasts.</p>
+            </div>
+
+            <div class="heat-card fotki">
+                <div class="flame-indicator">🔥🔥</div>
+                <div class="heat-level-title">Fotki Tikha</div>
+                <div class="heat-scoville">Zesty Bengali Kick • Medium-High Heat</div>
+                <p class="heat-desc">The authentic pungent punch crafted for traditional Bengali mutton curries, fish jhol, and spiced vegetable fries. Pungent, lively, and mouth-watering.</p>
+            </div>
+
+            <div class="heat-card bullet">
+                <div class="flame-indicator">🔥🔥🔥</div>
+                <div class="heat-level-title">Bullet Chilly</div>
+                <div class="heat-scoville">Extreme Fire • Maximum Scoville Kick</div>
+                <p class="heat-desc">Engineered strictly for true spice enthusiasts. Pure, unfiltered, fiery potency that tingles instantly. Use in small pinches for unforgettable heat.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- VALUE PILLARS -->
+<section class="features-section">
+    <div class="container">
+        <div class="section-title">
+            <h2>Why Connoisseurs Trust Ballab Masala</h2>
+            <p>From local farms to your cooking pots, we maintain an uncompromising standard of clean nutrition and sensory excellence.</p>
+        </div>
+
+        <div class="grid-3">
+            <div class="pillar-card">
+                <div class="pillar-icon-box">🌿</div>
+                <h3>Zero Adulteration Guarantee</h3>
+                <p>Guaranteed zero brick powder, zero sawdust, zero lead chromate, and zero synthetic azo dyes. We test every incoming harvest for food-grade purity.</p>
+            </div>
+
+            <div class="pillar-card">
+                <div class="pillar-icon-box">⚙️</div>
+                <h3>Traditional Slow Stone-Grinding</h3>
+                <p>High-speed industrial blades generate heat that vaporizes volatile oils. Our slow stone-grinding keeps the internal temperatures cool, locking in deep natural aromas.</p>
+            </div>
+
+            <div class="pillar-card">
+                <div class="pillar-icon-box">🛡️</div>
+                <h3>Aroma-Lock Foil Pouches</h3>
+                <p>Multi-layered food-grade moisture-barrier packaging protects your spices against humidity, oxidation, and staleness for up to 12 months.</p>
+            </div>
+
+            <div class="pillar-card">
+                <div class="pillar-icon-box">⚡</div>
+                <h3>Curcumin Potency Retained</h3>
+                <p>Our Salem and Lakadong turmeric varieties are unpolished, preserving peak medicinal curcumin levels that bolster immunity and lend a rich golden hue.</p>
+            </div>
+
+            <div class="pillar-card">
+                <div class="pillar-icon-box">💬</div>
+                <h3>Direct WhatsApp Fulfillment</h3>
+                <p>No tedious passwords. Simply choose your spices, tap add, and send your order straight to our warehouse for speedy doorstep dispatch.</p>
+            </div>
+
+            <div class="pillar-card">
+                <div class="pillar-icon-box">🤝</div>
+                <h3>Wholesale & Restaurant Supply</h3>
+                <p>We supply top catering businesses, restaurants, and cloud kitchens across Burdwan, Hooghly, Kolkata, and beyond with wholesale pricing.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- LIVE STORE INVENTORY -->
+<section id="inventory" class="store-section">
+    <div class="container">
+        <div class="section-title">
+            <h2>The Artisan Spice Pantry</h2>
+            <p>Pure whole-ground spices, crafted fresh weekly. Packaged hygienically and shipped directly to your door.</p>
+        </div>
+
+        <div class="store-controls">
+            <div class="filter-pills">
+                <button class="filter-pill active" onclick="filterCategory('all', this)">All Spices</button>
+                <button class="filter-pill" onclick="filterCategory('Chilli', this)">Chilli Powders</button>
+                <button class="filter-pill" onclick="filterCategory('Turmeric', this)">Haldi / Turmeric</button>
+                <button class="filter-pill" onclick="filterCategory('Cumin', this)">Jeera & Dhania</button>
+            </div>
+            <div class="search-input-box">
+                <input type="text" id="spice-search" oninput="searchSpices(this.value)" placeholder="Search spices...">
+            </div>
+        </div>
+
+        <div id="inv-grid" class="grid-3">
+            <!-- Products loaded dynamically from CSV -->
+            <div style="grid-column: 1/-1; text-align:center; padding: 3rem; color: var(--gold); font-weight:700;">
+                Fetching fresh mill inventory...
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT TEASER -->
+<section class="about-section">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-image-stack">
+                <img src="https://micdp.coops4dev.coop/sites/default/files/styles/max_1440/public/2022-11/Frontier.jpg?itok=3bOzpRb3" alt="Traditional spice drying and selection" class="about-main-img" loading="lazy">
+            </div>
+            <div>
+                <div class="badge-pill">Our Heritage</div>
+                <h2>Reviving the Lost Soul of Pure Stone Milling</h2>
+                <p>Ballab Masala began with a simple disgust towards commercial mass-market spices, which often contain up to 30% foreign starch, spent seeds, and artificial yellow & red colorings.</p>
+                <p>We set up traditional stone-milling right in Nimdaha, Burdwan. Sourcing directly from trusted farms, sun-drying every seed under natural sunlight, and stone-grinding without rushing. The result is pure, vibrant, therapeutic spice that makes home-cooked dishes unforgettable.</p>
+                <a href="about.html" class="btn btn-outline" style="margin-top: 1rem;">Read Our Full Process →</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CLIENT TESTIMONIALS -->
+<section style="padding: 6rem 0; background: var(--card-bg);">
+    <div class="container">
+        <div class="section-title">
+            <h2>Loved by Generations of Home Chefs</h2>
+            <p>Real feedback from customers across West Bengal who refuse to cook with supermarket generic spices.</p>
+        </div>
+
+        <div class="grid-3">
+            <div class="pillar-card">
+                <div style="color: var(--gold); font-size: 1.2rem; margin-bottom: 0.8rem;">★★★★★</div>
+                <p style="font-style: italic; margin-bottom: 1.2rem;">"The moment I opened the Assam Special Chilli packet, the fragrance filled the room. The curry got a royal red color without burning our tongues. My children loved the chicken gravy!"</p>
+                <strong>— Priya Sharma, Kolkata</strong>
+            </div>
+
+            <div class="pillar-card">
+                <div style="color: var(--gold); font-size: 1.2rem; margin-bottom: 0.8rem;">★★★★★</div>
+                <p style="font-style: italic; margin-bottom: 1.2rem;">"I ordered the Bullet Chilly for our restaurant's spicy mutton handi. Just half a teaspoon did wonders. Clean, fiery, no chemical bitterness. Absolutely sensational."</p>
+                <strong>— Rahul Verma, Burdwan</strong>
+            </div>
+
+            <div class="pillar-card">
+                <div style="color: var(--gold); font-size: 1.2rem; margin-bottom: 0.8rem;">★★★★★</div>
+                <p style="font-style: italic; margin-bottom: 1.2rem;">"The stone-ground Jeera and Haldi are unmatched. You need only half the quantity compared to regular market packets because the essential oils are untouched."</p>
+                <strong>— Mrs. Dasgupta, Nadia</strong>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FREQUENTLY ASKED QUESTIONS -->
+<section class="faq-section">
+    <div class="section-title">
+        <h2>Frequently Asked Questions</h2>
+        <p>Everything you need to know about our stone-milling purity and orders.</p>
+    </div>
+
+    <details>
+        <summary>Are your spices 100% free from artificial food colorings?</summary>
+        <p>Yes, absolutely. We do not use Sudan dyes, Lead Chromate, or synthetic color enhancers. The deep golden hue of our Turmeric and the striking red of our Assam Special Chilli come purely from natural carotenoids and curcumin.</p>
+    </details>
+
+    <details>
+        <summary>What is the key difference between your 3 chilli powders?</summary>
+        <p><strong>Assam Special:</strong> Rich red hue, velvety texture, gentle mild warmth.<br>
+        <strong>Fotki Tikha:</strong> Classic robust Bengali heat, pungent and zesty for daily curries.<br>
+        <strong>Bullet Chilly:</strong> Intense, fiery Scoville potency for hardcore spice lovers.</p>
+    </details>
+
+    <details>
+        <summary>How should I store stone-ground spices to maintain freshness?</summary>
+        <p>Keep the spices in our resealable aroma-lock pouches or transfer them into airtight glass or stainless-steel jars away from direct sunlight and moisture. In these conditions, they will retain their full aromatic oils for 12 months.</p>
+    </details>
+
+    <details>
+        <summary>How does the WhatsApp 1-Click checkout work?</summary>
+        <p>Add items to your cart, click the Cart button, and tap '1-Click Checkout via WhatsApp'. An order message with item names, quantities, and totals will be automatically composed so you can send it directly to our dispatch team.</p>
+    </details>
+
+    <details>
+        <summary>Do you offer wholesale bulk supply for caterers and restaurants?</summary>
+        <p>Yes! We provide 5kg, 10kg, and 25kg commercial bulk sacks at wholesale prices for caterers, restaurants, and spice retailers across Bengal. Reach out via our Contact page or call +91 9734239509.</p>
+    </details>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <h3 style="color:var(--gold); font-family:var(--font-display); font-size:1.6rem; margin-bottom:1rem;">Ballab Masala</h3>
+                <p style="color:#a8a29e; font-size:0.95rem; margin-bottom:1.5rem; max-width: 320px;">
+                    Reviving authentic, unadulterated stone-ground spices. Handpicked seeds, solar sun-dried, and milled cold for real flavor.
+                </p>
+                <div style="font-size:0.9rem; line-height: 1.8;">
+                    <p>📍 <strong>Mill:</strong> Nimdaha Kali Bari, Burdwan, WB 713512</p>
+                    <p>📞 <strong>Direct:</strong> +91 9734239509</p>
+                    <p>✉️ <strong>Email:</strong> manikbiswas9122@gmail.com</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+                    <a href="https://wa.me/919734239509" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2"/></svg></a>
+                </div>
+            </div>
+
+            <div>
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="#inventory">Artisan Store</a>
+                <a href="#spectrum">Chilli Heat Scale</a>
+                <a href="about.html">About Stone Milling</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+
+            <div>
+                <h4>Service Areas</h4>
+                <p style="font-size:0.9rem; line-height:1.7; color:#a8a29e;">
+                    Burdwan, Nadia, Hooghly, Birbhum, Murshidabad, Kolkata, Howrah, North & South 24 Parganas, and Pan-India Courier.
+                </p>
+            </div>
+
+            <div>
+                <h4>Legal & Trust</h4>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+                <div style="margin-top:1.5rem; background:rgba(255,255,255,0.05); padding:1rem; border-radius:10px;">
+                    <span style="display:block; font-size:0.75rem; text-transform:uppercase; color:var(--gold); font-weight:700;">Zero-DB Architecture</span>
+                    <span style="font-size:0.8rem; color:#d6d3d1;">End-to-end encrypted direct order transmission.</span>
+                </div>
+            </div>
+        </div>
+
+        <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1.5rem; text-align: center; font-size: 0.85rem; color: #78716c;">
+            &copy; 2026 Ballab Masala. All rights reserved. 100% Pure Indian Spices.
+        </div>
+    </div>
+</footer>
+
+<!-- CART TRIGGER & DRAWER -->
+<div id="cart-trigger-btn" onclick="toggleCartDrawer()">
+    🛒 View Cart (<span class="header-cart-count">0</span>)
+</div>
+
+<div id="cart-drawer-overlay" onclick="toggleCartDrawer()"></div>
+
+<div id="cart-drawer">
+    <div class="cart-header">
+        <h3 style="font-size: 1.4rem;">Your Spice Cart</h3>
+        <button onclick="toggleCartDrawer()" style="background:none; border:none; font-size:1.6rem; cursor:pointer; color:var(--text-heading);">&times;</button>
+    </div>
+
+    <div class="cart-items-container" id="cart-items-target">
+        <!-- Dynamic Cart Items -->
+    </div>
+
+    <div class="cart-footer">
+        <div class="cart-total-row">
+            <span>Subtotal:</span>
+            <span id="cart-total-price">₹0.00</span>
+        </div>
+
+        <div style="margin-bottom: 1.2rem;">
+            <input type="text" id="cust-name" placeholder="Your Name" style="width:100%; padding:0.8rem 1rem; border-radius:8px; border:1px solid var(--border-color); background:var(--bg); color:var(--text-heading); margin-bottom:8px;">
+            <input type="text" id="cust-address" placeholder="Delivery Address & Landmark" style="width:100%; padding:0.8rem 1rem; border-radius:8px; border:1px solid var(--border-color); background:var(--bg); color:var(--text-heading);">
+        </div>
+
+        <button onclick="dispatchWhatsAppOrder()" class="btn btn-primary" style="width: 100%; padding: 1rem;">
+            💬 1-Click WhatsApp Checkout
+        </button>
+    </div>
+</div>
+
+<!-- TOAST NOTIFICATION -->
+<div id="toast-notification">
+    <span id="toast-msg">Item added to cart!</span>
+</div>
+
+<!-- WHATSAPP FLOATING BUTTON -->
+<a href="https://wa.me/919734239509?text=Hello%20Ballab%20Masala,%20I%20want%20to%20inquire%20about%20your%20pure%20spices." target="_blank" rel="noopener noreferrer" id="wa-widget" aria-label="Direct WhatsApp Chat">
+    <svg viewBox="0 0 24 24" fill="white" width="30" height="30"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23c-1.48 0-2.93-.39-4.19-1.15l-.3-.17l-3.12.82l.83-3.04l-.2-.32a8.188 8.188 0 0 1-1.26-4.38c.01-4.54 3.7-8.24 8.25-8.24m-3.53 3.16c-.13 0-.35.05-.54.26c-.19.2-.72.7-.72 1.72s.73 2.01.83 2.14c.1.13 1.44 2.19 3.48 3.07c.49.21.87.33 1.16.43c.49.16.94.13 1.29.08c.4-.06 1.21-.5 1.38-.98c.17-.48.17-.89.12-.98c-.05-.09-.18-.13-.37-.23c-.19-.1-.1.13-.1.13s-1.13-.56-1.32-.66c-.19-.1-.32-.15-.45.05c-.13.2-.51.65-.62.78c-.11.13-.23.15-.42.05c-.19-.1-.8-.3-1.53-.94c-.57-.5-1.02-1.12-1.21-1.45c-.11-.19-.01-.29.09-.38c.09-.08.19-.23.29-.34c.1-.11.13-.19.19-.32c.06-.13.03-.24-.01-.34c-.05-.1-.45-1.08-.62-1.48c-.16-.4-.36-.34-.51-.35c-.11-.01-.25-.01-.4-.01Z"/></svg>
+</a>
+
+<!-- CLIENT LOGIC & CART SYSTEM -->
+<script>
+// Theme Switcher
+function toggleTheme() {
+    document.body.classList.toggle('dark-mode');
+    localStorage.setItem('bm_theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+}
+if (localStorage.getItem('bm_theme') === 'dark') document.body.classList.add('dark-mode');
+
+// Navigation Drawer
+function toggleMobileNav() {
+    document.querySelector('.nav-links').classList.toggle('active');
+}
+function closeNav() {
+    document.querySelector('.nav-links').classList.remove('active');
+}
+
+// Toast Alert
+function showToast(msg) {
+    const t = document.getElementById('toast-notification');
+    document.getElementById('toast-msg').innerText = msg;
+    t.classList.add('show');
+    setTimeout(() => t.classList.remove('show'), 2800);
+}
+
+// CSV Parser
+function parseCSVLine(str) { 
+    const res = []; let cur = ''; let inQuote = false; 
+    for (let i = 0; i < str.length; i++) { 
+        const c = str[i]; 
+        if (c === '"') { 
+            if (inQuote && str[i+1] === '"') { cur += '"'; i++; } 
+            else { inQuote = !inQuote; } 
+        } else if (c === ',' && !inQuote) { 
+            res.push(cur.trim()); cur = ''; 
+        } else { cur += c; } 
+    } 
+    res.push(cur.trim()); return res; 
+}
+
+// Inventory & Filter Logic
+let allProducts = [];
+const CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTs32OYdkg_YQUk4zAR_VmMn0BxJHgVYHgfZnFiK0L1PT0w16pW9VhtHRSp9bKUGnkfm2U4kof_iMGm/pub?output=csv';
+
+async function fetchInventory() {
+    try {
+        const res = await fetch(CSV_URL);
+        const txt = await res.text();
+        const lines = txt.split(/\r\n|\n/);
+        allProducts = [];
+        
+        for(let i=1; i<lines.length; i++) {
+            if(!lines[i].trim()) continue;
+            const c = parseCSVLine(lines[i]);
+            if(c.length > 1) {
+                let imgs = c[3] ? c[3].split('|') : [];
+                allProducts.push({
+                    name: c[0],
+                    price: c[1],
+                    desc: c[2] || 'Freshly cold stone-ground, 100% natural, unadulterated spice powder.',
+                    img: imgs[0] || 'https://cdn.shopaccino.com/refresh/articles/shutterstock1503700925-670186_l.jpg?v=681'
+                });
+            }
+        }
+        renderProducts(allProducts);
+    } catch(e) {
+        console.error("CSV loading error:", e);
+        renderFallbackProducts();
+    }
+}
+
+function renderFallbackProducts() {
+    allProducts = [
+        { name: "Assam Special Chilli Powder", price: "₹120 / 200g", desc: "Vibrant scarlet red hue with gentle warm pungency. Milled from select Assam sun-dried peppers.", img: "https://cdn.shopaccino.com/refresh/articles/shutterstock1503700925-670186_l.jpg?v=681" },
+        { name: "Fotki Tikha Chilli Powder", price: "₹115 / 200g", desc: "Traditional pungent kick engineered for mouth-watering Bengali mutton, fish, and vegetable curries.", img: "https://cdn.shopaccino.com/refresh/articles/shutterstock1503700925-670186_l.jpg?v=681" },
+        { name: "Bullet Chilly Extreme Powder", price: "₹140 / 200g", desc: "Fierce, unadulterated high-Scoville heat. Pinpoint aroma and instant tongue-tingling spice.", img: "https://cdn.shopaccino.com/refresh/articles/shutterstock1503700925-670186_l.jpg?v=681" },
+        { name: "Pure Curcumin Turmeric (Haldi)", price: "₹95 / 200g", desc: "Stone-ground unpolished Salem turmeric roots with verified high curcumin content.", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMsg1j-M4Aj0dh2h7oXkgvJceNlpvroL-Y402z8UShK1vpzQuAiXYG-qrw&s=10" },
+        { name: "Roasted Cumin Powder (Jeera)", price: "₹130 / 200g", desc: "Slow roasted on natural iron pans and stone-ground to release deep, earthy, nutty aromas.", img: "https://micdp.coops4dev.coop/sites/default/files/styles/max_1440/public/2022-11/Frontier.jpg?itok=3bOzpRb3" },
+        { name: "Aromatic Coriander Powder (Dhania)", price: "₹85 / 200g", desc: "Crisp coriander seeds stone-ground cold to retain natural volatile citrus notes.", img: "https://cdn.shopaccino.com/refresh/articles/shutterstock1503700925-670186_l.jpg?v=681" }
+    ];
+    renderProducts(allProducts);
+}
+
+function renderProducts(list) {
+    const grid = document.getElementById('inv-grid');
+    if(!grid) return;
+    if(list.length === 0) {
+        grid.innerHTML = `<div style="grid-column: 1/-1; text-align:center; padding:3rem; color:var(--text-body);">No spices found matching your search.</div>`;
+        return;
+    }
+    grid.innerHTML = list.map(p => `
+        <div class="product-card">
+            <div class="product-img-box">
+                <span class="purity-tag">Stone Milled</span>
+                <img src="${p.img}" alt="${p.name}" loading="lazy">
+            </div>
+            <div class="product-body">
+                <h3 class="product-title">${p.name}</h3>
+                <div class="product-price">${p.price}</div>
+                <p class="product-desc">${p.desc}</p>
+                <div class="product-actions">
+                    <button onclick="addToCart('${p.name.replace(/'/g, "\\'")}', '${p.price}')" class="btn btn-primary" style="padding:0.6rem 0.8rem; font-size:0.85rem;">
+                        + Add to Cart
+                    </button>
+                    <a href="product.html?item=${encodeURIComponent(p.name)}" class="btn btn-outline" style="padding:0.6rem 0.8rem; font-size:0.85rem;">
+                        Details
+                    </a>
+                </div>
+            </div>
+        </div>
+    `).join('');
+}
+
+function filterCategory(cat, btn) {
+    document.querySelectorAll('.filter-pill').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    if(cat === 'all') {
+        renderProducts(allProducts);
+    } else {
+        const filtered = allProducts.filter(p => p.name.toLowerCase().includes(cat.toLowerCase()));
+        renderProducts(filtered);
+    }
+}
+
+function searchSpices(term) {
+    const q = term.toLowerCase().trim();
+    const matches = allProducts.filter(p => 
+        p.name.toLowerCase().includes(q) || p.desc.toLowerCase().includes(q)
+    );
+    renderProducts(matches);
+}
+
+// Modern Cart System
+let cart = JSON.parse(localStorage.getItem('bm_cart')) || [];
+
+function updateCartUI() {
+    const totalItems = cart.reduce((acc, item) => acc + item.qty, 0);
+    document.querySelectorAll('.header-cart-count').forEach(el => el.innerText = totalItems);
+    
+    const floatBtn = document.getElementById('cart-trigger-btn');
+    if(floatBtn) floatBtn.style.display = totalItems > 0 ? 'inline-flex' : 'none';
+
+    const container = document.getElementById('cart-items-target');
+    const totalPriceEl = document.getElementById('cart-total-price');
+
+    if(container) {
+        if(cart.length === 0) {
+            container.innerHTML = `<div style="text-align:center; padding: 3rem 0; opacity:0.6;">Your spice cart is empty.<br>Select from our stone-ground pantry!</div>`;
+            if(totalPriceEl) totalPriceEl.innerText = "₹0.00";
+        } else {
+            let total = 0;
+            container.innerHTML = cart.map((item, idx) => {
+                const numericPrice = parseFloat(item.price.replace(/[^0-9.]/g, '')) || 100;
+                total += numericPrice * item.qty;
+                return `
+                    <div class="cart-drawer-item">
+                        <div>
+                            <strong style="display:block; font-size:0.95rem; color:var(--text-heading);">${item.name}</strong>
+                            <span style="font-size:0.85rem; color:var(--primary); font-weight:700;">${item.price}</span>
+                        </div>
+                        <div class="item-controls">
+                            <button class="item-btn" onclick="changeQty(${idx}, -1)">−</button>
+                            <span style="font-weight:700; font-size:0.9rem;">${item.qty}</span>
+                            <button class="item-btn" onclick="changeQty(${idx}, 1)">+</button>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+            if(totalPriceEl) totalPriceEl.innerText = "₹" + total.toFixed(2);
+        }
+    }
+    localStorage.setItem('bm_cart', JSON.stringify(cart));
+}
+
+function addToCart(name, price) {
+    const found = cart.find(i => i.name === name);
+    if(found) {
+        found.qty++;
+    } else {
+        cart.push({ name, price, qty: 1 });
+    }
+    updateCartUI();
+    showToast(`Added ${name} to cart!`);
+}
+
+function changeQty(idx, delta) {
+    if(!cart[idx]) return;
+    cart[idx].qty += delta;
+    if(cart[idx].qty <= 0) cart.splice(idx, 1);
+    updateCartUI();
+}
+
+function toggleCartDrawer() {
+    document.getElementById('cart-drawer').classList.toggle('active');
+    document.getElementById('cart-drawer-overlay').classList.toggle('active');
+}
+
+function dispatchWhatsAppOrder() {
+    if(cart.length === 0) return alert('Your cart is empty.');
+    const name = document.getElementById('cust-name').value.trim();
+    const address = document.getElementById('cust-address').value.trim();
+    
+    let msg = `*NEW ORDER - BALLAB MASALA*%0A`;
+    msg += `-----------------------------------%0A`;
+    let total = 0;
+    cart.forEach(item => {
+        const cost = parseFloat(item.price.replace(/[^0-9.]/g, '')) || 100;
+        total += cost * item.qty;
+        msg += `• ${item.name} x ${item.qty} (${item.price})%0A`;
+    });
+    msg += `-----------------------------------%0A`;
+    msg += `*Estimated Total:* ₹${total.toFixed(2)}%0A%0A`;
+    if(name) msg += `*Customer:* ${name}%0A`;
+    if(address) msg += `*Delivery Address:* ${address}%0A`;
+    msg += `*Order Notes:* Please confirm stock & shipping charges.`;
+
+    window.open(`https://wa.me/919734239509?text=${msg}`, '_blank');
+    cart = [];
+    updateCartUI();
+    toggleCartDrawer();
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+    fetchInventory();
+    updateCartUI();
+});
+</script>
